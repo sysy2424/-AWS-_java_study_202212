@@ -1,4 +1,4 @@
-package j12_배열;
+      package j12_배열;
 
 //entity객체 , 사용자 정보를 담기위한 객체, 변수들의 모임.
 public class J12_User {

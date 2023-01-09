@@ -11,7 +11,7 @@ public class J12_UserRepository {
 	}
 	
 	public J12_User[] getUserTable() { 
-		return userTable;
+		return userTable;          //배열객체를 리턴.
 	}
 	
 	public void saveUser(J12_User user) {
@@ -40,9 +40,56 @@ public class J12_UserRepository {
 		
 	}
 	
+	public J12_User findUserByUsername(String username) {      // 입력받은 값을 메소드로 넘김.
+		
+		J12_User user = null;
+		
+		for (J12_User u : userTable) {
+			if(u == null) {					//객체는 항상 null체크 
+				continue;
+			}
+			if(u.getUsername().equals(username)) {		
+				user = u;
+				break;
+			}
+		}
+		
+		return user;
+	}
+	
+	/*
+	 * 
+	 * 3.사용자이름으로 회원 조회
+	 * 
+	 * 4.회원 정보 수정
+	 * 		수정할 사용자이름을 입력하세요: aaa
+	 * 
+	 * 		해당 사용자이름은 존재하지 않는 사용자이름입니다.
+	 * 
+	 * 		========<< 수정메뉴 >>========
+	 * 		사용자이름: aaa
+	 * 		==============================
+	 * 		1. 비밀번호 변경
+	 * 		2. 이름변경
+	 * 		3. 이메일 변경
+	 * 		==============================
+	 * 		b. 뒤로가기
+	 * 
+	 *      수정 메뉴 선택: 1
+	 *      
+	 *      
+	 *      ========<< 비밀번호 변경 >>=======
+	 *      기존의 비밀번호를 입력하세요: 1234
+	 *      
+	 *      [비밀번호가 틀리면] 비밀번호가 일치하지 않습니다.(수정 메뉴로 이동)
+	 *      [비밀번호가 일치하면]
+	 *      새로운 비밀번호를 입력하세요: 1111
+	 *      새로운 비밀번호를 확인해주세요: 1234
+	 *      
+	 *      [비밀번호가 틀리면] 비밀번호 서로 일치하지 않습니다.(수정 메뉴로 이동)
+	 *      [비밀번호가 일치하면]
+	 *      비밀번호 변경 완료.
+	 */
 	
 	
-	
-	
-
 }
