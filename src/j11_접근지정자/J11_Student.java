@@ -6,7 +6,7 @@ public class J11_Student {
 	private int age;
 
 	
-	
+	//외부에서 접근할수없어 게터,세터가 필요. alt + shift + s > getter, setter
 	public J11_Student(String name, int age) {
 		this.name = name;
 		this.age = age;

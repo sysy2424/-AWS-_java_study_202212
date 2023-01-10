@@ -3,9 +3,10 @@ package j10_생성자;
 public class J10_Student {
 	
 	//참조변수, 레퍼런스변수, 멤버변수
-	String name;
-	int age;
+	public String name;
+	public int age;
 	
+	//no argument 생성자
 	J10_Student() {
 		System.out.println("기본 생성자 호출");
 	}
