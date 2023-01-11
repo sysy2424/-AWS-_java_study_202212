@@ -7,7 +7,7 @@ public class Controller {  //고칠필요가 없는 클래스
 	private View view; //뷰는 mainview
 	private Scanner scanner;
 	
-	public Controller(View view) {  
+	public Controller(View view) {    
 		this.view = view;
 		scanner = new Scanner(System.in);
 	}

@@ -104,7 +104,7 @@ public class J12_UserService {      //클래스 틀 / 기능을 실행하는 용
 		
 		}
 
-	private void updateUser() {
+	private void UpdateUser() {
 		J12_User user = verifyUsername();
 		if(user == null) {
 			System.out.println("존재하지 않는 사용자이름입니다.");
