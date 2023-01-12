@@ -13,17 +13,20 @@ public class Continue {
 			System.out.println("i: " + i);
 		}
 		
+			System.out.println();
+		
 		int i = 0;
 		
 		while(i < 10) {
 			
-			if(i % 2 == 0) {
-				
+			if(i % 2 == 0) {	
+			i++;
+			continue;
+			
+			}
 			System.out.println("i: " + i);
 			
 			i++;
-			
-			}
 	}
 
 }
