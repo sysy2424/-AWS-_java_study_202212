@@ -11,12 +11,18 @@ public class J11_StudentMain {
 //			
 //		s1.printInfo();
 	
-		J11_StudentDefault s2 = new J11_StudentDefault();
+		J11_StudentDefault s2 = new J11_StudentDefault("윤선영");
 	
 //		s2.name = "김준이";
 //	
 //		System.out.println("이름: " + s2.name); //직접가져오기
 		System.out.println("이름: " + s2.getName());//메소드를 통해서 가져오기
+		
+		
+		
+		J11_Student s3 = new J11_Student("선영", 30);
+		s3.printInfo();
+		
 	
 	}
 	

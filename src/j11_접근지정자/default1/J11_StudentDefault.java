@@ -9,13 +9,16 @@ public class J11_StudentDefault {
 		
 		
 	}
+	public J11_StudentDefault(String name) {
+		this.name = name;
+	}
 	
 	public J11_StudentDefault(String name, int age) {
 		this.name = name;
 		this.age = age;
 	}
 	
-	void printInfo() {
+	public void printInfo() {
 		System.out.println("이름: " + name);
 		System.out.println("나이: " + age);
 	}
@@ -28,5 +31,12 @@ public class J11_StudentDefault {
 	public void setName(String name) {
 		this.name = name;
 	}
+	public int getAge() {
+		return age;
+	}
+	public void setAge(int age) {
+		this.age = age;
+	}
+	
 	
 }

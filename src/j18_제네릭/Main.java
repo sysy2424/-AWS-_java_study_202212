@@ -7,5 +7,10 @@ public class Main {
 			TestData<String, Double> td2 = new TestData<String, Double>("junil", 100.05);
 			System.out.println(td);
 			System.out.println(td2);
+			
+			CMRespDto<TestData<String, Integer>> cm = 		//제네릭 안에 제네릭.
+			new CMRespDto<TestData<String, Integer>>(200, "성공", td);
+			
+			System.out.println(cm);
 		}
 }
